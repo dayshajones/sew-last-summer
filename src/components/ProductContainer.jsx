@@ -1,8 +1,13 @@
 import React from "react";
+import products from "./ProductData";
+import ProductCard from "./ProductCard";
 
 const ProductContainer = () => {
     return (
-    <div>All Products</div>
+    <div>
+        <h2>All Products</h2>
+        {products.map((product, i) => <ProductCard {...product} key={i} />)}
+    </div>
     )
 }
 
