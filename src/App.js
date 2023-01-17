@@ -4,15 +4,21 @@ import { Route, Routes} from 'react-router-dom'
 import Home from './components/Home';
 import Navbar from './components/Navbar';
 import ProductContainer from './components/ProductContainer';
+import About from './components/About';
+import Contact from './components/Contact';
+import Faq from './components/Faq';
 
 function App() {
   return (
     <>
       <Navbar />
-      
+
       <Routes>
         <Route path="/" element={<Home/>} />
-        <Route path="/donations" element={<ProductContainer/>} />
+        <Route path="/products" element={<ProductContainer/>} />
+        <Route path="/about" element={<About/> } />
+        <Route path="/contact" element={<Contact/> } />
+        <Route path="/faq" element={<Faq/> } />
       </Routes>
     </>
   );
